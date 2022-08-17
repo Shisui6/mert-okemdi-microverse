@@ -3,6 +3,12 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -44,5 +50,43 @@ body {
 } 
 
 #projects {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    grid-gap: 20px;
+
+    text-align: center;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+}
+
+.project-tile {
+    height: 200px;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: darkgrey;
+
+    margin-top: 180px;
+
+    text-align: center;
     
 }
+
+footer li {
+    display: inline-block;
+    padding: 10px 20px;
+
+
+}
+
+
+
